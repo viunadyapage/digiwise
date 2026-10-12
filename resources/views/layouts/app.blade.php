@@ -24,8 +24,8 @@
         <nav class="nav-menu">
             <a href="{{ route('beranda') }}">Beranda</a>
             <a href="{{ route('modul') }}">Modul</a>
-            <a href="#">Model</a>
-            <a href="#">Galeri</a>
+            <a href="#">Video</a>
+            <a href="{{ route('galeri') }}">Galeri</a>
             <a href="{{ route('faq') }}">FAQ</a>
             <a href="#">Kontak</a>
         </nav>

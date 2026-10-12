@@ -4,9 +4,7 @@
 
 @section('content')
 
-    {{-- ==========================================
-         SECTION 1: HERO / BERANDA
-    =========================================== --}}
+    {{-- beranda --}}
     <section class="hero" id="beranda">
 
         {{-- Konten teks --}}
@@ -80,9 +78,7 @@
     </section>
 
 
-    {{-- ==========================================
-         SECTION 2: TENTANG KAMI
-    =========================================== --}}
+    {{-- tentang kami --}}
     <section class="about-section" id="tentang">
 
         {{-- Gambar kegiatan --}}

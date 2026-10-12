@@ -14,3 +14,5 @@ Route::view('/modul/baca', 'pembaca-pdf')
 Route::view('/video', 'video')->name('video');
 
 Route::view('/faq', 'faq')->name('faq');
+
+Route::view('/galeri', 'galeri')->name('galeri');
