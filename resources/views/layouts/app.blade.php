@@ -22,11 +22,11 @@
 
         <!-- Navigation -->
         <nav class="nav-menu">
-            <a href="/">Beranda</a>
-            <a href="#">Modul</a>
-            <a href="#">Poster</a>
+            <a href="{{ route('beranda') }}">Beranda</a>
+            <a href="{{ route('modul') }}">Modul</a>
+            <a href="#">Model</a>
             <a href="#">Galeri</a>
-            <a href="#">FAQ</a>
+            <a href="{{ route('faq') }}">FAQ</a>
             <a href="#">Kontak</a>
         </nav>
 

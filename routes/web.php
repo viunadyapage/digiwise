@@ -2,17 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('beranda');
+
+Route::view('/modul', 'modul')->name('modul');
+
+Route::view('/modul/baca', 'pembaca-pdf')
+    ->name('modul.baca');
+
+Route::view('/video', 'video')->name('video');
+
+Route::view('/faq', 'faq')->name('faq');
