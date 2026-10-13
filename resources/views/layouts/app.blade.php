@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>@yield('title', 'PKM DigiWise')</title>
-
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
@@ -85,11 +85,39 @@
 
 
     <!-- content -->
-
     <main>
         @yield('content')
     </main>
 
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-name">PKM DigiWise</span>
+                <p>Membangun generasi cerdas dan aman di era digital.</p>
+
+                <div class="footer-socials">
+                    <a href="https://instagram.com/pkmpm.digiwise?xtok=ZTRteXhwd3Z0NGZl" target="_blank" rel="noopener noreferrer"aria-label="Instagram PKM DigiWise">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1" fill="currentColor" stroke="none"/>
+                        </svg>
+                        <span>@pkpm.digiwise</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@pkmpm.digiwise?_r=1&_t=ZS-9AW5kZ47O89" target="_blank" rel="noopener noreferrer" aria-label="TikTok PKM DigiWise">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M14 3v11.2a4.2 4.2 0 1 1-4-4.2"/>
+                            <path d="M14 3c.5 3.1 2.5 5.1 5.5 5.5"/>
+                        </svg>
+                        <span>@pkpm.digiwise</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; {{ date('Y') }} PKM DigiWise. All rights reserved.
+            </div>
+        </div>
+    </footer>
 
     <!-- js -->
 

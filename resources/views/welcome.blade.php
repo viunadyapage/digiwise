@@ -29,7 +29,7 @@
             {{-- Tombol utama --}}
             <div class="hero-buttons">
 
-                <a href="#modul" class="btn btn-primary">
+                <a href="{{ asset('documents/MODUL PKM DIGIWISE.pdf') }}" class="btn btn-primary">
                     Pelajari Modul
                 </a>
 
