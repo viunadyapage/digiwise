@@ -24,10 +24,10 @@
         <nav class="nav-menu">
             <a href="{{ route('beranda') }}">Beranda</a>
             <a href="{{ route('modul') }}">Modul</a>
-            <a href="#">Video</a>
+            <a href="{{ route('video') }}">Video</a>
             <a href="{{ route('galeri') }}">Galeri</a>
             <a href="{{ route('faq') }}">FAQ</a>
-            <a href="#">Kontak</a>
+            <a href="{{ route('kontak') }}">Kontak</a>
         </nav>
 
         <!-- Day / Night Mode -->
