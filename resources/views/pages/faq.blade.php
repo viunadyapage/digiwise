@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('title', 'FAQ - PKM DigiWise')

@@ -18,8 +18,6 @@ Route::view('/faq', 'faq')->name('faq');
 
 Route::view('/galeri', 'galeri')->name('galeri');
 
-Route::view('/kontak', 'kontak')->name('kontak');
-
 Route::get('/kontak', function () {
     return view('kontak');
 })->name('kontak');
