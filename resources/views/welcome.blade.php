@@ -60,7 +60,7 @@
         <div class="hero-image">
 
             <img
-                src="{{ asset('images/sementara.jpg') }}"
+                src="{{ asset('images/coverawal.jpeg') }}"
                 alt="Kegiatan pembelajaran literasi digital"
             >
 
@@ -85,7 +85,7 @@
         <div class="about-image">
 
             <img
-                src="{{ asset('images/tentang.jpg') }}"
+                src="{{ asset('images/logo.png') }}"
                 alt="Kegiatan edukasi dan sosialisasi literasi digital"
             >
 

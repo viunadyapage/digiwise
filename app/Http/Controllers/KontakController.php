@@ -3,22 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\FeedbackMail;
 
 class KontakController extends Controller
 {
     public function kirim(Request $request)
     {
-        // Validasi input
-        $validatedData = $request->validate([
-            'nama' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'pesan' => 'required|string',
+        $data = $request->validate([
+            'nama' => ['required', 'string', 'max:100'],
+            'email' => ['required', 'email', 'max:255'],
+            'subjek' => ['required', 'string', 'max:150'],
+            'pesan' => ['required', 'string', 'max:5000'],
         ]);
 
-        // Simpan data ke database atau kirim email, sesuai kebutuhan
-        // Contoh: Kontak::create($validatedData);
+        Mail::to(env('MAIL_TO_ADDRESS'))
+            ->send(new FeedbackMail($data));
 
-        // Redirect kembali dengan pesan sukses
-        return redirect()->back()->with('success', 'Pesan Anda telah dikirim!');
+        return back()->with(
+            'success',
+            'Feedback berhasil dikirim. Terima kasih telah menyampaikan masukan kepada tim DigiWise.'
+        );
     }
 }
